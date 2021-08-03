@@ -1,0 +1,97 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{makeidx}
+\usepackage[top=3cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{xstring}
+\usepackage{ifthen}
+\usepackage[portuguese]{babel}
+\fancyhf{}
+\fancyhead[C]{\tiny CONTINUAÇÃO DO CONTRATO DE LOCAÇÃO DO IMÓVEL SITUADO NA \Cendereco, APT. Nº \apartamento – PORTO DE GALINHAS/IPOJUCA (PE) CEP: 55.590-000\\}
+\date{\today}
+\author{ENRIQUE ALBERTO DEL CESARE}
+\title{CONTRATO DE LOCAÇÃO DE IMÓVEL}
+\begin{document}
+\thispagestyle{empty}
+\begin{center}{\bf \huge CONTRATO DE LOCAÇÃO DE IMÓVEL}\\[5.1cm] \end{center} 
+\newcommand\n{\newcommand}
+\input{info}
+
+\newcommand\cendereco{
+\IfEqCase{\bloco}{
+{A}{Rua Cavalo Marinho, nº 180}
+{B}{Rua Cavalo Marinho, nº 182}
+{C}{Rua Merepe III, S\//N}
+}}
+
+\newcommand\Cendereco{
+\IfEqCase{\bloco}{
+{A}{RUA CAVALO MARINHO, Nº 180}
+{B}{RUA CAVALO MARINHO, Nº 182}
+{C}{RUA MEREPE III, S\//N}
+}}
+
+\newcommand\limitepessoas{
+\IfEqCase{\bloco}{
+{A}{3}
+{B}{\ifthenelse{\apartamento < 9}{5}{2}}
+{C}{5}
+}}
+
+Os signatários deste instrumento de um lado Enrique Alberto Del Cesare,
+argentino, naturalizado brasileiro, solteiro, CPF nº 578.550.724-20, identidade nº 2.583.252 SDS\//PE, 
+residente a Rua Cavalo Marinho, nº 180 Recanto Porto de Galinhas II Quadra 5 Lote G1 
+no bairro de Porto de Galinhas Ipojuca/Pernambuco CEP 55.590-000 e, de outro,
+\textbf{\nome}\ifthenelse{\equal{\nacionalidade}{}}{}{, \nacionalidade}\ifthenelse{\equal{\estadocivil}{}}{}{, \estadocivil}\ifthenelse{\equal{\profissao}{}}{}{, \profissao}\ifthenelse{\equal{\cpf}{}}{}{, CPF nº \cpf}\ifthenelse{\equal{\identidade}{}}{}{, identidade nº \identidade}\ifthenelse{\equal{\oendereco}{}}{}{, residente a: \oendereco}\ifthenelse{\equal{\telefone}{}}{}{, telefone: \telefone}. 
+
+O primeiro nomeado, aqui designado “LOCADOR”, sendo proprietário do imóvel situado à \textbf{\cendereco, Apt. \apartamento}, 
+no bairro de Porto de Galinhas Ipojuca\//Pernambuco, CEP 55.590-000 loca-o ao segundo, aqui designado “LOCATÁRIO”, mediante as cláusulas e condições seguintes:
+
+\begin{enumerate}
+
+\item O prazo do presente contrato é de \textbf{01 (hum) ano} a iniciar em \datainicio\ e a terminar em \datafim\ data em que o LOCATÁRIO 
+se obriga a restituir o imóvel completamente desocupado, nas condições previstas neste contrato,
+sob pena de incorrer na multa da cláusula 9º e de sujeitar-se ao disposto no Artigo 1196 do Código Civil Brasileiro;
+\item O aluguel mensal é de \textbf{R\$ \aluguel,00 \ifthenelse{\equal{\extensoaluguel}{}}{}{(\extensoaluguel\ reais)}}, que o LOCATÁRIO se compromete a pagar pontualmente, até o dia 
+\vencimento\
+de cada mês, na residência do LOCADOR ou efetuando o depósito no Banco do Brasil Agência 4600-0 poupança número 9457-9, operação 51; 
+\item Os consumos de \textbf{água e luz}, assim como taxas de condomínio, que incidam ou venham a incidir sobre o imóvel, conservação e outras decorrentes de lei, assim como suas respectivas majorações, \textbf{ficam a cargo do LOCATÁRIO} e, seu não pagamento na época determinada, acarretará a rescisão deste; 
+\item O LOCATÁRIO, salvo as obras que importem na segurança do imóvel, obriga-se por todas as outras, devendo trazer o imóvel locado em boas condições de higiene e limpeza, e pinturas, em perfeito estado de conservação e funcionamento, para assim restituí-los quando findo ou rescindido este contrato, sem direito a retenção ou indenização por quaisquer benfeitorias ainda que necessárias, as quais ficarão desde logo incorporadas ao imóvel; 
+\item Obriga-se o LOCATÁRIO no curso da locação, a satisfazer a todas as exigências dos Poderes Públicos a que der causa, não motivando elas a rescisão deste contrato;  
+\item Não é permitida a transferência deste contrato, nem a sub-locação, cessão ou empréstimo total ou parcial do imóvel, sem prévio consentimento por escrito do LOCADOR, devendo no caso deste ser dado, agir oportunamente junto aos ocupantes, afim de que o imóvel esteja desimpedido nos termos do presente contrato. Igualmente não é permitido fazer modificações no imóvel, sem autorização do LOCADOR;
+\item O LOCATÁRIO desde já faculta ao LOCADOR, examinar ou vistoriar o imóvel locado quando entender conveniente;
+\item Fica estipulada a multa de 10\% (Dez por Cento) para pagamento fora do vencimento, na qual incorrerá a parte que infringir qualquer cláusula deste contrato, com a faculdade, para a parte inocente, de poder considerar simultaneamente rescindida a locação, independentemente de qualquer formalidade;
+\item Para todas as questões oriundas deste contrato, será competente o foro da situação do imóvel, com renúncia de qualquer outro, por mais especial que se apresente;
+\item Tudo quanto for devido em razão deste contrato e, que não comportem o processo executivo, será cobrado em ação competente, ficando a cargo do devedor, em qualquer caso, os honorários do advogado que o credor constituir para ressalva dos seus direitos;
+\item Quaisquer estragos ocasionados ao imóvel e suas instalações, bem como as despesas a que o proprietário for obrigado por eventuais modificações feitas no imóvel, pelo LOCATÁRIO, não ficam compreendidas na multa da cláusula 9ª , mas serão pagas à parte;
+\item O imóvel, objeto desta locação, destina-se exclusivamente para fins residenciais, reservado para \textbf{\limitepessoas\ pessoas},  não podendo, a sua destinação ser mudada sem o consentimento do LOCADOR;
+Será cobrado uma multa de 100 reais por dia, por pessoa além do limite;
+\item Quando da rescisão do contrato pelo LOCATÁRIO  ou pelo LOCADOR, o desistente será penalizado com uma multa no valor correspondente a 2 (dois) meses de aluguel. O LOCADOR não será penalizado quando o motivo da desistência for motivado pela não observância de qualquer uma das cláusulas pelo LOCATÁRIO;
+\ifthenelse{\equal{\objetos}{}}{}{\item Os objetos citados nesta cláusula: \objetos;}
+\item Demais regras de convivência no condomínio: Proibido som alto, jogar lixo no chão ou jardim, como cigarros, latinhas etc. 
+Estender pranchas ou outros objetos na área externa.
+Proibido festas, piscinas de plástico, lavar carros ou bicicletas no condomínio. 
+\ifthenelse{\equal{\bloco}{C}}{}{As bicicletas devem ser guardadas no bicicletário, 
+é proibido a criação de animais\ifthenelse{\apartamento < 9 \AND \equal{\bloco}{B}}{ e cada apartamento tem direito a uma vaga de garagem rotativa}{}}.
+
+\end{enumerate}
+Assim, por estarem justos e contratados, assinam o presente, em 2 (duas) vias de igual teor.
+
+\begin{flushright}
+Ipojuca, \today
+\end{flushright}
+
+\begin{center}
+
+\vspace{2cm}
+
+LOCADOR: \hrulefill
+\\Enrique Alberto Del Cesare
+
+\vspace{3cm}
+
+LOCATÁRIO: \hrulefill
+\\
+\nome \end{center}
+
+\end{document}
