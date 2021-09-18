@@ -6,6 +6,8 @@ to recompile, and there is a
 [makefile](https://man7.org/linux/man-pages/man1/make.1.html)
 to facilitate.
 
+[demo](https://github.com/gabriel-del/contract-latex/blob/main/tmp/main.pdf)
+
 # Usage
 
 ```
